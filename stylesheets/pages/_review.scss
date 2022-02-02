@@ -1,0 +1,30 @@
+.section-review {
+  h3 {
+    color: $color-secondary;
+  }
+  .title {
+    color: $color-secondary;
+  }
+  .question-item {
+    padding: 10px 20px;
+    position: relative;
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 59%;
+      height: 2px;
+      background-color: $color-secondary;
+    }
+  }
+  .input-group {
+    .form-check {
+      &:first-child {
+        color: $color-secondary;
+        margin-right: 20px;
+      }
+      &:nth-child(2n) {
+        color: $color-primary;
+      }
+    }
+  }
+}

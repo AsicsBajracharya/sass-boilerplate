@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .logo {
+    width: 170px;
+    max-width: 100%;
+    @media (max-width: 520px) {
+      width: 68px;
+    }
+  }
+}

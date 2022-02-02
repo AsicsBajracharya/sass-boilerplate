@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// --------------------------------------------------------------------------
+.btn {
+  padding: 13px 35px;
+  display: inline-block;
+  border-radius: 25px;
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  .btn {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    @media (max-width: 520px) {
+      font-size: 14px;
+    }
+  }
+  .btn {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+.btn-primary {
+  background-color: $color-primary;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: darken($color: $color-primary, $amount: 10%);
+  }
+}
+.btn-secondary {
+  background-color: $color-secondary;
+  &:hover {
+    background-color: darken($color: $color-secondary, $amount: 10%);
+  }
+}

@@ -1,0 +1,31 @@
+.section-news {
+  .slide-item {
+    .text-box {
+      width: 56%;
+      margin: 0 auto;
+      .news-body {
+        line-height: 1.5;
+      }
+    }
+  }
+}
+.slick-dots {
+  transform: translateY(-30%);
+  li {
+    margin: 0 1px;
+    button {
+      &:before {
+        font-size: 9px;
+        color: lighten($color: $color-secondary, $amount: 20%);
+        opacity: 0.75;
+      }
+    }
+  }
+  li.slick-active {
+    button {
+      &:before {
+        color: darken($color: $color-secondary, $amount: 10%);
+      }
+    }
+  }
+}

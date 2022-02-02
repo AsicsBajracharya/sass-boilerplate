@@ -1,0 +1,43 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 125% / 1.4 $text-font-stack;
+}
+
+h1 {
+  color: $color-primary;
+  @media (max-width: 520px) {
+    font-size: 21px;
+  }
+}
+
+h2 {
+  font-size: 41px;
+  font-weight: 700;
+  @media (max-width: 520px) {
+    font-size: 22px;
+  }
+}
+h3 {
+  @media (max-width: 520px) {
+    font-size: 13px;
+  }
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  @media (max-width: 520px) {
+    font-size: 15px;
+  }
+}
+
+.small-title {
+  font-size: 25px;
+  font-weight: 600;
+  @media (max-width: 520px) {
+    font-size: 14px;
+  }
+}
